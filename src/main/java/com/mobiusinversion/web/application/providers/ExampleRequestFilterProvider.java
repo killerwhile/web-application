@@ -21,11 +21,8 @@ public class ExampleRequestFilterProvider implements DynamicFeature {
     
     @Override
     public void configure(ResourceInfo resourceInfo, FeatureContext featureContext) {
-        ExampleRequestFormattingFilter exampleRequestFormattingFilter = new ExampleRequestFormattingFilter();
-        featureContext.register(exampleRequestFormattingFilter);
-        
-        ExampleRequestLoggingFilter exampleRequestLoggingFilter = new ExampleRequestLoggingFilter(servletRequest);
-        featureContext.register(exampleRequestLoggingFilter);
+        featureContext.register(new ExampleRequestFormattingFilter());
+        featureContext.register(new ExampleRequestLoggingFilter(servletRequest));
     }
     
 }
