@@ -1,4 +1,4 @@
-package com.example.application.model;
+package com.mobiusinversion.web.application.model;
 
 import java.util.*;
 import java.text.SimpleDateFormat;

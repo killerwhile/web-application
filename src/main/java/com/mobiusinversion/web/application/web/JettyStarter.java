@@ -1,6 +1,6 @@
-package com.example.application.web;
+package com.mobiusinversion.web.application.web;
 
-import com.example.application.constants.ServletConstants;
+import com.mobiusinversion.web.application.constants.ServletConstants;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
